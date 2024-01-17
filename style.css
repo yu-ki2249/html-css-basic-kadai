@@ -1,0 +1,33 @@
+body {
+     font-family: "Arial", "Meiryo", sans-serif;
+     text-align: center;
+     font-size: 20px;
+    
+
+}
+ h1 {
+    font-size: 40px;
+    letter-spacing: 1.2em;
+    border-bottom:solid 3px rgb(115, 115, 114) ;
+    text-shadow: 2px 1px 3px gray;
+ }
+ 
+
+ #oya p {
+    font-weight: bold;
+ }
+ .fist-color {
+    color: rgb(255, 192, 203);
+ }
+ .second-color{
+    color: skyblue;
+ }
+ .skyblue {
+    color: skyblue;
+ }
+ .pink {
+    color: rgb(255, 192, 203);
+ }
+ .google-fonts {
+    font-family: 'Noto Sans JP', sans-serif;
+} 
