@@ -1,67 +1,86 @@
-#top {
-    width: 800px;
+h1,
+p,
+body {
+    margin: 0px;
+}
+
+p,
+a {
+    font-size: 20px;
+}
+
+header {
+    margin-bottom: 20px;
+    /* padding: 20px; */
     text-align: center;
-    margin: 20px auto;
-    background-color: #dcc9f4;
+    background-color: rgb(244, 79, 79);
 }
-.top-child {
-    width: 20%;
-    display: inline-block;
-    background-color: #ffd9df;
+
+h1 {
+    color: rgb(255, 255, 255)
 }
-#middle {
-    width: 800px;
-    height: 800px;
-    margin: 20px auto;
-    position: relative;
-    background-color: #ffd9df;
+
+main {
+    padding: 10px;
 }
-#middle-child01 {
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    width: 200px;
-    height: 200px;
-    background-color: #87ceeb;
+
+#parent {
+    display: flex;
+    justify-content: space-around;
 }
-#middle-child02 {
-    position: absolute;
-    top: 300px;
-    left: 300px;
-    width: 200px;
-    height: 200px;
-    background-color: #87ceeb;
+
+.contents {
+    border: solid 3px rgb(238, 204, 204);
+    flex-basis: 25%;
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-align: center;
 }
-#middle-child03 {
-    position: absolute;
-    top: 500px;
-    left: 500px;
-    width: 200px;
-    height: 200px;
-    background-color: #87ceeb;
+
+h2 {
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122);
 }
-#bottom {
-    width: 800px;
-    height: 300px;
-    margin: auto;
-    background-color: #87ceeb;
+
+h2::before {
+    content: "●";
+    color: rgb(239, 111, 139);
 }
-#bottom-child01 {
-    width: 400px;
-    height: 100px;
-    background-color: #e5dcf0;
+
+p:nth-child(3)::first-letter {
+    font-weight: bold;
+    color: rgb(97, 206, 249);
 }
-#bottom-child02 {
-    position: relative;
-    left: 200px;
-    width: 400px;
-    height: 100px;
-    background-color: #e5dcf0;
+
+img {
+    margin: 10px 0px;
+    width: 70%;
 }
-#bottom-child03 {
-    position: relative;
-    left: 400px;
-    width: 400px;
-    height: 100px;
-    background-color: #e5dcf0;
+
+footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(244, 79, 79);
+}
+
+a:visited {
+    color: rgb(193, 234, 251);
+}
+
+a:hover {
+    color: rgb(245, 178, 168);
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    #parent {
+        display: block;
+    }
 }
